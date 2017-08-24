@@ -1,4 +1,3 @@
-'use strict';
 
 /**
  * @ngdoc function
@@ -7,11 +6,7 @@
  * # MainCtrl
  * Controller of the crmApp
  */
-angular.module('crmApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+var pubCon = angular.module('crmApp');
+pubCon.controller('MainCtrl', function ($scope) {
+  $scope.todos = ['Item 1', 'Item 2', 'Item 3'];
+});

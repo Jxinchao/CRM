@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc overview
  * @name crmApp
@@ -8,5 +6,14 @@
  *
  * Main module of the application.
  */
-angular
-  .module('crmApp', []);
+var myApp = angular.module('crmApp', ['ui.router']);
+myApp.config(function ($stateProvider, $urlRouterProvider) {
+
+  $stateProvider.state('index', {
+      url:'/index',
+      templateUrl: 'views/main.html',
+      controller:'MainCtrl'
+    });
+  $urlRouterProvider.when('','index');
+});
+

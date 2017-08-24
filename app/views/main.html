@@ -1,23 +1,133 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<div class="container" ng-controller="MainCtrl">
+    <header>
+      <div class="logo">
+        <div class="weather">
+          <iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5">
+          </iframe>
+        </div>
+        <div class="search_cen">
+          <marquee scrolltop="0" onmouseover="this.stop()" onmouseout="this.start()"><span>公告</span><a href="http://news.sina.com.cn/society">最近新闻动态</a></marquee>
+        </div>
+        <div class="Administrator">
+          <div class="header_p" id="header_p">
+            <img src="../img/d4.jpg"/>
+          </div>
+          <div class="menu_control">
+            <p class="menu">
+              管理员<img src="../img/up.png" id="alter"/>
+            </p>
+            <ul class="submenu">
+              <li><i class="icon-user-plus"></i><span>管理员信息</span></li>
+              <li id="switchover"><i class="icon-tab"></i><span>切换用户</span></li>
+              <li id="quit"><i class="icon-switch"></i><span>退出</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="right_add">
+          +
+        </div>
+      </div>
+    </header>
+    <side>
+      <div class="centerLeft">
+        <div class="logo">
+          <img src="../img/LOGO.png"/>
+        </div>
+        <ul>
+          <li style="background: #5093E1;"><a href="homepage.html">首页</a></li>
+          <li><a href="Jindex.html">员工信息管理</a></li>
+          <li><a href="Personnel.html">人事变动</a></li>
+          <li><a href="recycle.html">回收站</a></li>
+          <li><a href="help.html">帮助</a></li>
+        </ul>
+      </div>
+    </side>
+  <div class="right_main">
+    <div class="leftmain_bar">
+      <div class="charts">
+        <div id="charts_z">
+        </div>
+      </div>
+      <div class="department">
+        <div class="depa_data">
+          <img src="../img/848401985cd34f82.jpg"/>
+          <h4>徐志摩</h4>
+          <p>
+            部门：<span>技术部</span>
+          </p>
+          <p>
+            职位：<span>项目经理</span>
+          </p>
+          <p>
+            工号：<span>D186356</span>
+          </p>
+        </div>
+        <div class="depa_data">
+          <img src="../img/848401985cd34f82.jpg"/>
+          <h4>徐志摩</h4>
+          <p>
+            部门：<span>技术部</span>
+          </p>
+          <p>
+            职位：<span>项目经理</span>
+          </p>
+          <p>
+            邮箱：<span>H186378</span>
+          </p>
+        </div>
+        <div class="depa_data">
+          <img src="../img/848401985cd34f82.jpg"/>
+          <h4>徐志摩</h4>
+          <p>
+            部门：<span>技术部</span>
+          </p>
+          <p>
+            职位：<span>项目经理</span>
+          </p>
+          <p>
+            邮箱：<span>H186378</span>
+          </p>
+        </div>
+        <div class="depa_data">
+          <img src="../img/848401985cd34f82.jpg"/>
+          <h4>徐志摩</h4>
+          <p>
+            部门：<span>技术部</span>
+          </p>
+          <p>
+            职位：<span>项目经理</span>
+          </p>
+          <p>
+            邮箱：<span>H186378</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="recently">
+      <div class="staff_tx">
+        <div id="clock" class="light">
+          <div class="display">
+            <div class="weekdays">
+            </div>
+            <div class="ampm">
+            </div>
+            <div class="digits">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recently_btn" style="overflow: hidden;">
+        <p style="">
+          最近录入员工信息
+        </p>
+        <div style="overflow:hidden;margin-top:10px;height:410px;">
+          <div class="staff_box" style="position:relative;">
+            <div class="staff_page">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
