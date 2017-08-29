@@ -9,14 +9,14 @@
 var myApp = angular.module('crmApp', ['ui.router']);
 myApp.config(function ($stateProvider, $urlRouterProvider) {
 
-  $stateProvider.state('index', {
+  $stateProvider.state('index',{
       url:'/index',
       templateUrl: 'views/main.html',
       controller:'MainCtrl'
-    }).state('index.yuangong',{
-      url:'/yuangong',
-      templateUrl: 'views/yuangong.html'
+    }).state('index.indexright',{
+      url:'/indexrihgt',
+      templateUrl: 'views/indexright.html'
   });
-  $urlRouterProvider.when('','index');
+  $urlRouterProvider.when('','/index/indexrihgt');
 });
 
