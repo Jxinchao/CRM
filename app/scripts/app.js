@@ -13,7 +13,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
       url:'/index',
       templateUrl: 'views/main.html',
       controller:'MainCtrl'
-    });
+    }).state('index.yuangong',{
+      url:'/yuangong',
+      templateUrl: 'views/yuangong.html'
+  });
   $urlRouterProvider.when('','index');
 });
 
